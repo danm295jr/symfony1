@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ movie.title }}{% endblock %}
+
+{% block body %}
+    <h1>{{ movie.title }}</h1>
+
+    <p><strong>Год выпуска:</strong> {{ movie.year }}</p>
+
+    <h2>Описание</h2>
+    <p>{{ movie.description }}</p>
+
+    <p>
+        <a href="{{ path('app_movie_index') }}">&larr; Назад к списку фильмов</a>
+    </p>
+{% endblock %}
